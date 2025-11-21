@@ -37,21 +37,8 @@ Questa è una web application di tipo Blog sviluppata con Django e database SQLi
 
 ## Screenshot
 ### Homepage
-![Homepage](../screenshot_homepage.png)
+![Homepage](Screenshot%202025-11-21%20181917.png)
 ### Dettaglio post
-![Dettaglio post](../screenshot_dettaglio.png)
-## Commento personale
-Questo progetto mi ha permesso di approfondire lo sviluppo web con Django, la gestione di database e l’organizzazione di un’applicazione completa. Ho imparato a curare sia la parte tecnica che quella estetica, migliorando la mia capacità di risolvere problemi e di creare interfacce moderne e responsive... apparte quel "piccolo" problema dei bottoni che non cambiavano l'estetica...(l'installazione del django_summernote aveva corrotto senza motivo il mio file css, ho dovuto sia ricreare il file css e ricaricare queste righe:
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.2/howto/static-files/
-
-STATIC_URL = 'static/'
-
-# Aggiunta: directory static per sviluppo
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-] 
-dentro settings.py...). Però in fin dei conti è stata una bella esperienza e sono soddisfatto del risultati che ho raggiunto durante questo corso, sia con django che con flask e sono pronto a "importare" queste competenze già in altri progetti personali! La ringrazio per tutto quello che ci ha dato/insegnato.
-
+![Dettaglio post](Screenshot%202025-11-21%20181929.png)
 
 
