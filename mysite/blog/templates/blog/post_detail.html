@@ -1,0 +1,18 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<main class="max-w-4xl mx-auto w-full px-4 py-16">
+  <article class="bg-gray-800 rounded-xl shadow-2xl p-10 border border-pink-400">
+    <h1 class="text-3xl font-bold mb-4 text-cyan-400 drop-shadow-lg"
+      style="font-family: 'Orbitron', Arial, sans-serif;">{{ post.title }}</h1>
+    <img src="{{ post.immagine.url }}" alt="Immagine del post" class="rounded-lg mb-6 shadow-lg"
+      style="max-width:100px;">
+    <p class="text-pink-400 mb-6 text-sm">{{ post.author }} | {{ post.created_on }}</p>
+    <div class="prose prose-lg max-w-none text-gray-200 leading-relaxed mb-6">
+      {{ post.content|safe }}
+    </div>
+    <a href="{% url 'home'  %}" class="btn-gaming">
+      Torna indietro &larr;
+    </a>
+  </article>
+</main>
+{% endblock %}

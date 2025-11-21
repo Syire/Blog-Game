@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}Gaming Blog{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  {% block extra_head %}{% endblock %}
+</head>
+<body class="bg-gray-900 text-gray-200 min-h-screen">
+  <div class="navbar bg-gradient-to-r from-gray-800 via-gray-900 to-gray-700 shadow-lg py-6 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold tracking-wide text-cyan-400 flex items-center justify-center gap-3">
+      <i class="fas fa-gamepad text-pink-500 drop-shadow-lg"></i> Gaming Blog
+    </h1>
+  </div>
+  <div class="container-fluid  mx-auto my-10 bg-gray-800 rounded-xl shadow-2xl p-8">
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
+    <footer class="bg-gray-800 text-gray-400 text-center p-4 mt-auto border-t border-gray-700">
+        &copy; {{ year|default:"2025" }} Blog Django Moderno - Tutti i diritti riservati
+    </footer>
+</body>
+</html>

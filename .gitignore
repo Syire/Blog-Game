@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+# Django
+*.sqlite3
+*.log
+media/
+static/
+# VS Code
+.vscode/
+# Environment
+.env
+venv/
+# OS
+.DS_Store
+Thumbs.db
+# Misc
+*.bak
+*.swp
+*.swo
+# Node
+node_modules/
+# Coverage
+htmlcov/
+.coverage
+# Others
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+# Ignore migrations cache
+blog/migrations/__pycache__/
+mysite/__pycache__/
+blog/__pycache__/
